@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网页</title>
+    <style>
+        /* 设置全局样式 */
+        body {
+            font-family: 'Roboto', sans-serif;  /* 使用现代化字体 'Roboto' */
+            background-color: #f4f4f9;  /* 设置页面的背景颜色为浅灰色 */
+            margin: 0;  /* 去掉默认的页面外边距 */
+            padding: 0;  /* 去掉默认的页面内边距 */
+            display: flex;  /* 使用 Flexbox 布局 */
+            justify-content: center;  /* 内容水平居中 */
+            align-items: center;  /* 内容垂直居中 */
+            min-height: 100vh;  /* 设置页面内容最小高度为浏览器视窗高度 */
+        }
+
+        /* 为 header 设置样式 */
+        .header {
+            background-color: #89CFF0;  /* 设置头部背景颜色为淡蓝色 */
+            color: black;  /* 设置头部文本颜色为黑色 */
+            padding: 20px;  /* 给头部设置内边距 */
+            text-align: center;  /* 让头部文本居中 */
+            width: 100%;  /* 头部宽度占满整个屏幕 */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* 添加轻微阴影，增强立体感 */
+        }
+
+        /* 设置头部文字样式 */
+        .header h1, .header p {
+            margin: 0;  /* 移除默认的上下外边距 */
+            padding: 10px;  /* 给标题和段落设置内边距 */
+        }
+
+        /* 中心内容容器样式 */
+        .container {
+            text-align: center;  /* 让容器内部的文本居中 */
+            padding: 20px;  /* 为容器增加内边距 */
+            background: #fff;  /* 设置容器背景为白色 */
+            border-radius: 10px;  /* 设置容器四角圆角化 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* 添加阴影，增强立体感 */
+        }
+
+        /* 为列表和文本添加样式 */
+        ul {
+            list-style-type: none;  /* 移除默认的无序列表项目符号 */
+            padding: 0;  /* 移除无序列表的内边距 */
+        }
+
+        ul li {
+            padding: 5px;  /* 每个列表项的内边距 */
+            font-size: 18px;  /* 设置列表项的字体大小 */
+        }
+
+        /* 设置水平分割线样式 */
+        hr {
+            border: 0;  /* 去掉默认的边框样式 */
+            height: 2px;  /* 设置分割线的高度 */
+            background: linear-gradient(to right, blue, transparent);  /* 设置渐变的蓝色分割线 */
+        }
+
+        /* 按钮样式 */
+        button {
+            background-color: #3498db;  /* 设置按钮背景颜色为深蓝色 */
+            color: white;  /* 设置按钮文本颜色为白色 */
+            border: none;  /* 移除按钮的默认边框 */
+            padding: 10px 20px;  /* 设置按钮的内边距 */
+            font-size: 16px;  /* 设置按钮的字体大小 */
+            border-radius: 5px;  /* 设置按钮的圆角效果 */
+            cursor: pointer;  /* 鼠标移到按钮上时显示手形 */
+            transition: background-color 0.3s ease;  /* 添加颜色渐变效果，使悬停时过渡更流畅 */
+        }
+
+        /* 当鼠标悬停在按钮上时改变背景颜色 */
+        button:hover {
+            background-color: #2980b9;  /* 设置按钮悬停时的背景颜色 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部部分，包含标题和简单介绍 -->
+        <div class="header">
+            <h1>大家好！这是我的第一个网页。</h1>
+            <p>欢迎来学习Web前端设计与开发课程。</p>
+            <p>我是yld。</p>
+        </div>
+
+        <!-- 无序列表展示曲目 -->
+        <ul>
+            <li>曲目</li>
+            <li>sunflower</li>
+            <li>无题</li>
+            <li>枫叶城</li>
+            <li>安河桥</li>
+        </ul>
+        
+        <!-- 水平分割线，带有蓝色渐变效果 -->
+        <hr>
+
+        <!-- 下面的文本和按钮 -->
+        <p>你好。</p>
+        <button id="myButton">点击我</button>
+        <p id="message" style="display: none;">按钮被点击了！</p>
+
+        <!-- 引用外部 JavaScript 文件 -->
+        <script src="../experiment1/js/script.js"></script>
+        </div>
+</body>
+</html>
